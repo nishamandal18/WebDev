@@ -1,8 +1,21 @@
+@font-face {
+    font-family: horror;
+    src: url(./another_danger/Another\ Danger\ -\ Demo.otf);
+}
+@font-face {
+    font-family: sher;
+    src: url(./NeueMachina-Light_gwWCZxVuQl.ttf);
+}
+@font-face {
+    font-family: nothing;
+    src: url(./Ndot-55.otf);
+}
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
+
 
 html, body{
     height: 100%;
@@ -12,4 +25,16 @@ html, body{
 h1{
     color: aqua;
     background: rgb(3, 74, 74);
+}
+
+#nothing{
+    font-family: nothing;
+}
+
+#horror{
+    font-family: horror;
+}
+
+#sher{
+    font-family: sher;
 }
