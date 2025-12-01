@@ -26,7 +26,7 @@ body{
 #box3{
     height: 200px;
     width: 200px;
-    background: radial-gradient(red, yellow);
+    background: radial-gradient(red, orange, yellow);
 }
 
 #box4{
@@ -44,6 +44,12 @@ body{
 #box6{
     height: 200px;
     width: 200px;
-    background: linear-gradient(to right, red, blue);
+    background: linear-gradient(to right bottom, yellow, red);
+}
+
+#box7{
+    height: 200px;
+    width: 200px;
+    background: conic-gradient(violet, indigo, blue, green, yellow, orange, red, violet);
 }
 
