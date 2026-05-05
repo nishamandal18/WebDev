@@ -7,6 +7,6 @@ units:
 5. vmax (viewport maximum) - depends on maximum viewport
 6. vmin (viewport minimum) - depends on minimum viewport
 7. em - according to the parent and can be controlled by parent
-8. rem - according to the root and can be controlled by root
+8. rem - according to the root and can be controlled by root (default 1 rem = 16px)
 
 task - https://dribbble.com/shots/21661002-AI-Project-Showcase-Landing-Page

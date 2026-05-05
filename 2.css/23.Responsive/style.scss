@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'bottom-middle-text';
+    src: url(./63cffc0a3942456e003bc265_Chillax-Regular.woff);
+}
+
+@font-face {
+    font-family: 'bottom-paragraph';
+    src: url(./63cffc20aa8997095067596f_Satoshi-Light.woff);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    font-family: bottom-paragraph;
+    color: rgb(216, 216, 216);
+}
+
+body{
+    background-color: #0c0c0c;
+}
+
+@mixin font-column($gap : 0rem){
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+@mixin font-styling($font-family: system-ui, $font-weight: 200, $font-size: 0rem, $line-height: normal){
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+main{
+    width: 100%;
+    @include font-column(0rem);
+
+    section{
+        width: 100%;
+        @include font-column(1rem);
+        padding: 1rem;
+
+        .top{
+            width: 100%;
+
+            img{
+                width: 100%;
+                border-radius: 0.5rem;
+                object-fit: cover;
+            }
+        }
+
+        .bottom{
+            width: 100%;
+            background-color: rgb(29, 29, 29);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            @include font-column(4rem);
+
+            .text-meta{
+                @include font-styling(bottom-paragraph, 400, 0.9rem, normal);
+            }
+
+            .text{
+                @include font-column(0.7rem);
+
+                h1{
+                    text-transform: uppercase;
+                    @include font-styling(bottom-middle-text, 400, 2.25rem, 120%);
+                    
+                }
+
+                p{
+                    color: rgba(244, 242, 237, 0.6);
+                    @include font-styling(bottom-paragraph, 200, 1.25rem, 160%);
+                }
+
+                button{
+                    width: fit-content;
+                    text-transform: uppercase;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px){
+    main{
+        
+        section{
+            flex-direction: row;
+
+            .top, .bottom{
+                width: 50%;
+                
+            }
+
+            .bottom{
+                justify-content: space-between;
+                padding: 3rem;
+
+                .text-meta{
+                    margin-bottom: 6rem;
+                }
+
+                .text{
+                    h1{
+                        font-size: 4.5vw;
+                    }
+
+                    p{
+                    margin-bottom: 3rem;
+                }
+
+                }
+                
+            }
+        }
+    } 
+}

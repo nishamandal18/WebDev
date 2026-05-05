@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "bottom-middle-text";
+  src: url(./63cffc0a3942456e003bc265_Chillax-Regular.woff);
+}
+@font-face {
+  font-family: "bottom-paragraph";
+  src: url(./63cffc20aa8997095067596f_Satoshi-Light.woff);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-family: bottom-paragraph;
+  color: rgb(216, 216, 216);
+}
+
+body {
+  background-color: #0c0c0c;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+main section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section .top {
+  width: 100%;
+}
+main section .top img {
+  width: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section .bottom {
+  width: 100%;
+  background-color: rgb(29, 29, 29);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+main section .bottom .text-meta {
+  font-family: bottom-paragraph;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: normal;
+}
+main section .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section .bottom .text h1 {
+  text-transform: uppercase;
+  font-family: bottom-middle-text;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 120%;
+}
+main section .bottom .text p {
+  color: rgba(244, 242, 237, 0.6);
+  font-family: bottom-paragraph;
+  font-weight: 200;
+  font-size: 1.25rem;
+  line-height: 160%;
+}
+main section .bottom .text button {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  main section {
+    flex-direction: row;
+  }
+  main section .top, main section .bottom {
+    width: 50%;
+  }
+  main section .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main section .bottom .text-meta {
+    margin-bottom: 6rem;
+  }
+  main section .bottom .text h1 {
+    font-size: 4.5vw;
+  }
+  main section .bottom .text p {
+    margin-bottom: 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */
