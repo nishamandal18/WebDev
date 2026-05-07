@@ -22,6 +22,7 @@ html, body{
 html{
     font-family: bottom-paragraph;
     color: rgb(216, 216, 216);
+    font-size: clamp(14px, 1.5vw, 18px);
 }
 
 body{
@@ -40,9 +41,15 @@ body{
     font-size: $font-size;
     line-height: $line-height;
 }
+
+section{
+    max-width: 2000px;
+}
+
 main{
     width: 100%;
     @include font-column(0rem);
+    align-items: center;
 
     section{
         width: 100%;
@@ -95,7 +102,7 @@ main{
     }
 }
 
-@media (min-width: 992px){
+@media (min-width: 900px){
     main{
         
         section{

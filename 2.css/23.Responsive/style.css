@@ -20,10 +20,15 @@ html, body {
 html {
   font-family: bottom-paragraph;
   color: rgb(216, 216, 216);
+  font-size: clamp(14px, 1.5vw, 18px);
 }
 
 body {
   background-color: #0c0c0c;
+}
+
+section {
+  max-width: 2000px;
 }
 
 main {
@@ -31,6 +36,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0rem;
+  align-items: center;
 }
 main section {
   width: 100%;
@@ -90,7 +96,7 @@ main section .bottom .text button {
   padding: 0.5rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 900px) {
   main section {
     flex-direction: row;
     padding: 1rem 4rem;
