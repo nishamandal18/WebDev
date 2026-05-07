@@ -100,32 +100,30 @@ main{
         
         section{
             flex-direction: row;
+            padding: 1rem 4rem;
 
             .top, .bottom{
                 width: 50%;
-                
             }
 
             .bottom{
-                justify-content: space-between;
-                padding: 3rem;
+               display: flex;
+               justify-content: space-between;
+               padding: 4rem;
 
-                .text-meta{
-                    margin-bottom: 6rem;
-                }
-
-                .text{
+               .text{
                     h1{
-                        font-size: 4.5vw;
+                        font-size: 4rem;
                     }
 
                     p{
-                    margin-bottom: 3rem;
-                }
+                        width: 90%; 
 
-                }
-                
+                    }
+               }
+
             }
+                
         }
-    } 
-}
+    }
+} 

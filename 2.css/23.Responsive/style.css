@@ -93,21 +93,20 @@ main section .bottom .text button {
 @media (min-width: 992px) {
   main section {
     flex-direction: row;
+    padding: 1rem 4rem;
   }
   main section .top, main section .bottom {
     width: 50%;
   }
   main section .bottom {
+    display: flex;
     justify-content: space-between;
-    padding: 3rem;
-  }
-  main section .bottom .text-meta {
-    margin-bottom: 6rem;
+    padding: 4rem;
   }
   main section .bottom .text h1 {
-    font-size: 4.5vw;
+    font-size: 4rem;
   }
   main section .bottom .text p {
-    margin-bottom: 3rem;
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */
